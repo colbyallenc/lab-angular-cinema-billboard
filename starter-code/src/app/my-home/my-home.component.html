@@ -1,0 +1,4 @@
+<article class="movies" *ngFor="let movie of movies" >
+  <h2>{{movie.title}}</h2>
+  <a [routerLink]="['/movie', movie.id]"></a>
+</article>
